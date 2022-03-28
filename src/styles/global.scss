@@ -1,0 +1,11 @@
+@use 'fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-size: 1rem;
+    font-family: 'Heebo-Regular', 'sans-serif';
+    color: #21243D;
+}

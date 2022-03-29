@@ -1,5 +1,6 @@
-import { Bio } from 'app/components/bio/Bio';
 import { FC } from 'react';
+
+import { Bio } from 'app/components/Bio';
 
 export const Hero: FC = () => {
   return (

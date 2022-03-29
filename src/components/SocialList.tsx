@@ -1,35 +1,38 @@
 import { FC } from 'react';
 
-import { Facebook } from 'components/icons/Facebook';
-import { Instagram } from 'components/icons/Instagram';
-import { Linkedin } from 'components/icons/Linkedin';
-import { Twitter } from 'components/icons/Twitter';
+import { Icon } from './Icon';
 
 const socialList = [
   {
-    Icon: Facebook,
-    href: '/facebook',
+    title: 'Facebook',
+    src: '/icons/facebook.svg',
+    href: 'https://www.facebook.com/',
   },
   {
-    Icon: Instagram,
-    href: '/instagram',
+    title: 'Instagram',
+    src: '/icons/instagram.svg',
+    href: 'https://www.instagram.com/',
   },
   {
-    Icon: Twitter,
-    href: '/twitter',
+    title: 'Twitter',
+    src: '/icons/twitter.svg',
+    href: 'https://twitter.com/',
   },
   {
-    Icon: Linkedin,
-    href: '/linkedin',
+    title: 'Linkedin',
+    src: '/icons/linkedin.svg',
+    href: 'https://www.linkedin.com/',
   },
 ];
 
 export const SocialList: FC = () => {
   return (
     <div className="flex space-x-9">
-      {socialList.map(({ Icon, href }) => (
+      {socialList.map(({ title, src, href }) => (
         <a key={href} href={href} target="_blank" rel="noreferrer">
-          <span className="block w-8 h-8">{<Icon />}</span>
+          <span className="block w-8 h-8">
+            {<Icon src={src} title={title} />}
+          </span>
         </a>
       ))}
     </div>

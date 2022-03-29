@@ -1,0 +1,16 @@
+import { FC, ObjectHTMLAttributes } from 'react';
+
+type IconProps = ObjectHTMLAttributes<HTMLObjectElement> & {
+  title: string;
+  src: string;
+};
+
+export const Icon: FC<IconProps> = ({ title, src, ...props }) => (
+  <object
+    className="pointer-events-none"
+    {...props}
+    type="image/svg+xml"
+    data={src}
+    aria-label={title}
+  />
+);

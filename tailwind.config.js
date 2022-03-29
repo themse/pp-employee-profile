@@ -1,7 +1,21 @@
 module.exports = {
   content: ['./src/**/*.{tsx,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#FF6464',
+        secondary: '#00A8CC',
+        dark: '#21243D',
+        light: '#8695A4',
+      },
+
+      fontFamily: {
+        primary: ['Heebo-Regular', 'sans-serif'],
+        'text-100': ['Heebo-Medium', 'sans-serif'],
+        'text-200': ['Heebo-Bold', 'sans-serif'],
+        'text-300': ['Heebo-Black', 'sans-serif'],
+      },
+    },
 
     screens: {
       xs: { max: '576px' },
@@ -13,20 +27,6 @@ module.exports = {
 
     container: {
       center: true,
-    },
-
-    fontFamily: {
-      primary: ['Heebo-Regular', 'sans-serif'],
-      'text-100': ['Heebo-Medium', 'sans-serif'],
-      'text-200': ['Heebo-Bold', 'sans-serif'],
-      'text-300': ['Heebo-Black', 'sans-serif'],
-    },
-
-    colors: {
-      primary: '#FF6464',
-      secondary: '#00A8CC',
-      dark: '#21243D',
-      light: '#8695A4',
     },
   },
 

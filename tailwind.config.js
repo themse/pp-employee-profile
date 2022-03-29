@@ -7,6 +7,7 @@ module.exports = {
         secondary: '#00A8CC',
         tertiary: '#EDF7FA',
         dark: '#21243D',
+        'dark-indigo': '#142850',
         light: '#8695A4',
       },
 

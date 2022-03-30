@@ -24,7 +24,7 @@ export const WorkItem: FC<WorkItemProps> = ({
   const tagList = tags.join(', ');
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-5 border-b border-gray-200 pb-9 mb-9">
+    <article className="flex flex-col md:flex-row items-center gap-5 border-b border-gray-200 pb-9 mb-9">
       <img className="rounded" src={preview.src} alt={preview.altText} />
       <div className="flex flex-col gap-4">
         <h3 className="font-text-200 text-3xl">
@@ -38,6 +38,6 @@ export const WorkItem: FC<WorkItemProps> = ({
         </div>
         <p>{excerpt}</p>
       </div>
-    </div>
+    </article>
   );
 };

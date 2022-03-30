@@ -14,10 +14,6 @@ const navigation = [
     href: '/blog',
     title: 'Blog',
   },
-  {
-    href: '/contact',
-    title: 'Contact',
-  },
 ];
 
 export const Nav: FC = () => {

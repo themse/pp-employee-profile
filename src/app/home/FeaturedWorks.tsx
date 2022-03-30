@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { WorkItem } from 'app/components/work-item/WorkItem';
+import { WorkItem } from 'app/works/WorkItem';
 import { Container } from 'components/Container';
 
 import { workList } from 'app/utils/work-list';

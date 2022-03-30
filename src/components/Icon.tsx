@@ -1,11 +1,11 @@
-import { FC, ObjectHTMLAttributes } from 'react';
+import { FC, ObjectHTMLAttributes, memo } from 'react';
 
 type IconProps = ObjectHTMLAttributes<HTMLObjectElement> & {
   title: string;
   src: string;
 };
 
-export const Icon: FC<IconProps> = ({ title, src, ...props }) => (
+export const Icon: FC<IconProps> = memo(({ title, src, ...props }) => (
   <object
     className="pointer-events-none"
     {...props}
@@ -13,4 +13,4 @@ export const Icon: FC<IconProps> = ({ title, src, ...props }) => (
     data={src}
     aria-label={title}
   />
-);
+));

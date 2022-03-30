@@ -23,7 +23,9 @@ export const Nav: FC = () => {
         {navigation.map((item) => (
           <li key={item.href}>
             <Link to={item.href}>
-              <span className="font-text-100 text-xl">{item.title}</span>
+              <span className="font-text-100 text-xl hover:text-primary">
+                {item.title}
+              </span>
             </Link>
           </li>
         ))}

@@ -13,7 +13,7 @@ export const RecentPosts: FC = () => {
         <div className="space-y-6">
           <div className="flex justify-between">
             <h2 className="text-xl">Recent posts</h2>
-            <Link to="#">
+            <Link to="/blog">
               <span className="text-secondary">View all</span>
             </Link>
           </div>

@@ -20,7 +20,7 @@ export const PostItem: FC<PostItemProps> = ({
 
   return (
     <article className="bg-white rounded p-6 space-y-5">
-      <h3 className="font-text-200 text-2xl leading-9">
+      <h3 className="font-text-200 text-2xl leading-9 hover:text-primary">
         <Link to={url}>{title}</Link>
       </h3>
       <div className="flex xs:flex-col flex-row">

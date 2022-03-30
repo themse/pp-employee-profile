@@ -1,8 +1,5 @@
+@use 'tailwindcss';
 @use 'fonts';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
     font-size: 1rem;

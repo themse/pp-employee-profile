@@ -21,7 +21,11 @@ export const Bio: FC = () => {
             <Button>Download Resume</Button>
           </div>
           <div className="mx-auto min-w-250">
-            <img className="w-full" src="/images/avatar.png" alt="avatar" />
+            <img
+              className="w-full drop-shadow-xl"
+              src="/images/avatar.png"
+              alt="avatar"
+            />
           </div>
         </div>
       </Container>

@@ -27,7 +27,7 @@ export const WorkItem: FC<WorkItemProps> = ({
     <article className="flex flex-col md:flex-row items-center gap-5 border-b border-gray-200 pb-9 mb-9">
       <img className="rounded" src={preview.src} alt={preview.altText} />
       <div className="flex flex-col gap-4">
-        <h3 className="font-text-200 text-3xl">
+        <h3 className="font-text-200 text-3xl hover:text-primary">
           <Link to={url}>{title}</Link>
         </h3>
         <div className="flex gap-7 items-baseline">

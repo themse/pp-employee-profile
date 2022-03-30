@@ -4,8 +4,8 @@ import { Bio } from 'app/components/Bio';
 
 export const Hero: FC = () => {
   return (
-    <div>
+    <section className="hero">
       <Bio />
-    </div>
+    </section>
   );
 };

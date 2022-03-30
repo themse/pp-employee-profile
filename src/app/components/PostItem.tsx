@@ -19,7 +19,7 @@ export const PostItem: FC<PostItemProps> = ({
   const tagList = tags.join(', ');
 
   return (
-    <article className="bg-white rounded p-6 space-y-5">
+    <article className="bg-white rounded p-6 space-y-5 shadow-lg">
       <h3 className="font-text-200 text-2xl leading-9 hover:text-primary">
         <Link to={url}>{title}</Link>
       </h3>

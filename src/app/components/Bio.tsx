@@ -22,7 +22,7 @@ export const Bio: FC = () => {
           </div>
           <div className="mx-auto min-w-250">
             <img
-              className="w-full drop-shadow-xl"
+              className="w-full drop-shadow-xl rounded-full"
               src="/images/avatar.png"
               alt="avatar"
             />

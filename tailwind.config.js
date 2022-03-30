@@ -9,6 +9,7 @@ module.exports = {
         dark: '#21243D',
         'dark-indigo': '#142850',
         light: '#8695A4',
+        year: '#FF7C7C',
       },
 
       fontFamily: {

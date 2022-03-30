@@ -5,7 +5,7 @@ export const workList = [
       altText: 'Designing Dashboards',
     },
     title: 'Designing Dashboards',
-    url: '/designing-dashboards',
+    url: '/works/designing-dashboards',
     date: '2020',
     tags: ['Dashboard'],
     excerpt:
@@ -17,7 +17,7 @@ export const workList = [
       altText: 'Vibrant Portraits of 2020',
     },
     title: 'Vibrant Portraits of 2020',
-    url: '/vibrant-portraits-of-2020',
+    url: '/works/vibrant-portraits-of-2020',
     date: '2018',
     tags: ['Illustration'],
     excerpt:
@@ -29,7 +29,7 @@ export const workList = [
       altText: '36 Days of Malayalam type',
     },
     title: '36 Days of Malayalam type',
-    url: '/36-days-of-malayalam-type',
+    url: '/works/36-days-of-malayalam-type',
     date: '2018',
     tags: ['Typography'],
     excerpt:
@@ -41,7 +41,7 @@ export const workList = [
       altText: 'Components',
     },
     title: 'Components',
-    url: '/components',
+    url: '/works/components',
     date: '2018',
     tags: ['Components', 'Design'],
     excerpt:

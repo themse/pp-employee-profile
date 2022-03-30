@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const HomePage = lazy(() => import('pages/Home'));
 const WorksPage = lazy(() => import('pages/Works'));
 const BlogPage = lazy(() => import('pages/Blog'));
+const PageNotFound = lazy(() => import('pages/404'));
 
 const App: FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: FC = () => {
           <Route path="/works" element={<WorksPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </Suspense>

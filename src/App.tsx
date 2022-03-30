@@ -1,6 +1,8 @@
 import { FC, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import { Loader } from 'components/Loader';
+
 const HomePage = lazy(() => import('pages/Home'));
 const WorksPage = lazy(() => import('pages/works/Works'));
 const WorkPage = lazy(() => import('pages/works/[slug]'));
@@ -9,7 +11,7 @@ const PageNotFound = lazy(() => import('pages/404'));
 
 const App: FC = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />

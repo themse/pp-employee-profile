@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { Icon } from './Icon';
 
@@ -58,11 +58,18 @@ export const Nav: FC = () => {
       >
         {navigation.map((item) => (
           <li key={item.href}>
-            <Link to={item.href}>
+            <NavLink
+              className={({ isActive }): string =>
+                isActive
+                  ? 'text-primary cursor-default pointer-events-none'
+                  : ''
+              }
+              to={item.href}
+            >
               <span className="font-text-300 md:font-text-100 text-3xl md:text-xl hover:text-primary">
                 {item.title}
               </span>
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

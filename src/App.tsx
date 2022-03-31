@@ -11,17 +11,50 @@ const PageNotFound = lazy(() => import('pages/404'));
 
 const App: FC = () => {
   return (
-    <Suspense fallback={<Loader />}>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<HomePage />} />
-          <Route path="/works/:slug" element={<WorkPage />} />
-          <Route path="/works" element={<WorksPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </Suspense>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          index
+          element={
+            <Suspense fallback={<Loader />}>
+              <HomePage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/works/:slug"
+          element={
+            <Suspense fallback={<Loader />}>
+              <WorkPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/works"
+          element={
+            <Suspense fallback={<Loader />}>
+              <WorksPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <Suspense fallback={<Loader />}>
+              <BlogPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<Loader />}>
+              <PageNotFound />
+            </Suspense>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

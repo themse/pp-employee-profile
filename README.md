@@ -1,4 +1,4 @@
-# Mark Up Template "John"
+# Employee Profile Template "John"
 
 Simple personal website where you can introduce yourself, write blog and add your works. It consists of 4 pages:
 
